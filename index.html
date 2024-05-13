@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sundown Studio</title>
+    <title>Jitesh's Fax</title>
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-MX0XQA/aIDSnTNyAgOOy27Ryb6JHf1+txFtTlguexEJFzuWIE1f+TPrL6QGv4Bqzv0ZtnHvpjSH+C6DjPX8F1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
     <div id="loader">
-        <h1>ENVIRONMENTS</h1>
-        <h1>EXPERIENCES</h1>
-        <h1>CONTENT</h1>
+        <h1>BACKEND</h1>
+        <h1>FRONTEND</h1>
+        <h1>FULLSTACK</h1>
     </div>
     <div id="fixed-image">
 
@@ -24,79 +26,262 @@
 
         <div id="page1">
             <nav>
-                <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
-                    alt="">
+                <!-- <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+                    alt=""> -->
+                <div id="name"><h2>Jitesh</h2></div>
+                    
                 <div id="nav-part2">
-                    <h4><a href="#">Work</a></h4>
-                    <h4><a href="#">Studio</a></h4>
+                    <h4><a href="#">Download CV</a></h4>
+                    <h4><a href="#">Projects</a></h4>
+                    <h4><a href="#">About</a></h4>
                     <h4><a href="#">Contact</a></h4>
                 </div>
                 <h3>Menu</h3>
             </nav>
             <div id="center">
                 <div id="left">
-                    <h3>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and
-                        environments.</h3>
+                    <h3>I am a Backend Engineer
+                        Currently based in India. Doing what I absolutely love.</h3>
+                        <!-- <h4 class="project-line">Find below some valueable projects that I worked on!</h4> -->
                 </div>
                 <div id="right">
-                    <h1>SPACES <br>
-                        THAT <br>
-                        INSPIRE</h1>
+                    <h1>Hello, I am<br>Jitesh Kumar<br> Raghav.<br>
+                        </h1>
                 </div>
-
+                
             </div>
             <div id="hero-shape">
                 <div id="hero-1"></div>
                 <div id="hero-2"></div>
                 <div id="hero-3"></div>
             </div>
-            <video autoplay loop muted src="./video.mp4"></video>
+            <!-- <video autoplay loop muted src="./video.mp4"></video> -->
+
+            <section id="projects">
+                <p class="section__text__p1">Browse My Recent</p>
+                <h1 class="title">Projects</h1>
+                <h2 class="click-box-text">Click on these boxes for more info!</h2>
+                <div class="experience-details-container">
+                  <div class="about-containers">
+                    <div class="details-container-color-container">
+                      <div class="article-container">
+                        <img
+                          src="./assets/Screenshot 2024-05-07 011406.png"
+                          alt="Project 1"
+                          class="project-img"
+                          onclick="showProjectDetails('Chirper-X', 'Microblogging WebApp', 'https://github.com/')"
+                        />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Chirper-X</h2>
+                      <h3 class="sub-projecttitle">Microblogging WebApp</h3>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/'"
+                        >
+                          Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/'"
+                        >
+                          Visit
+                        </button>
+                      </div>
+                    </div>
+                    <div class="details-container-color-container">
+                      <div class="article-container">
+                        <img
+                          src="./assets/netflix2.png"
+                          alt="Project 2"
+                          class="project-img"
+                        />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Hotflix-GPT</h2>
+                      <h3 class="sub-projecttitle">Movie Recommendation Website</h3>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/'"
+                        >
+                          Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/'"
+                        >
+                        Visit
+                        </button>
+                      </div>
+                    </div>
+                    <div class="details-container-color-container">
+                      <div class="article-container">
+                        <img
+                          src="./assets/jira.png"
+                          alt="Project 3"
+                          class="project-img"
+                        />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Pro-Assign</h2>
+                      <h3 class="sub-projecttitle">Task & Bug Mangement</h3>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/'"
+                        >
+                          Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/'"
+                        >
+                        Visit
+                        </button>
+                      </div>
+                    </div>
+                    <div class="details-container-color-container">
+                        <div class="article-container">
+                          <img
+                            src="./assets/gobble.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Gobble It</h2>
+                        <h3 class="sub-projecttitle">Food Ordering Website</h3>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                          >
+                            Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                          >
+                          Visit
+                          </button>
+                        </div>
+                      </div>
+                      <div class="details-container-color-container">
+                        <div class="article-container">
+                          <img
+                            src="./assets/urlshort.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Minute-URL</h2>
+                        <h3 class="sub-projecttitle">URL shortening Service</h3>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                          >
+                            Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                          >
+                          Visit
+                          </button>
+                        </div>
+                      </div>
+                      <div class="details-container-color-container">
+                        <div class="article-container">
+                          <img
+                            src="./assets/portfolio.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Portfolio</h2>
+                        <h3 class="sub-projecttitle">Personal Portfolio Website</h3>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                          >
+                            Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                          >
+                          Visit
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+               
+              </section>
+
         </div>
+
+ 
         <div id="page2">
             <div id="moving-text">
                 <div class="con">
-                    <h1>EXPERIENCES</h1>
+                    <h1>BACKEND</h1>
                     <div id="gola"></div>
-                    <h1>CONTENT</h1>
+                    <h1>SPRING BOOT</h1>
                     <div id="gola"></div>
-                    <h1>ENVIRONMENTS</h1>
+                    <h1>FRONTEND</h1>
                     <div id="gola"></div>
-                </div>
-                <div class="con">
-                    <h1>EXPERIENCES</h1>
-                    <div id="gola"></div>
-                    <h1>CONTENT</h1>
-                    <div id="gola"></div>
-                    <h1>ENVIRONMENTS</h1>
+                    <h1>REACT</h1>
                     <div id="gola"></div>
                 </div>
                 <div class="con">
-                    <h1>EXPERIENCES</h1>
+                    <h1>BACKEND</h1>
                     <div id="gola"></div>
-                    <h1>CONTENT</h1>
+                    <h1>SPRING BOOT</h1>
                     <div id="gola"></div>
-                    <h1>ENVIRONMENTS</h1>
+                    <h1>FRONTEND</h1>
+                    <div id="gola"></div>
+                    <h1>REACT</h1>
                     <div id="gola"></div>
                 </div>
-            </div>
+                <div class="con">
+                    <h1>BACKEND</h1>
+                    <div id="gola"></div>
+                    <h1>SPRING BOOT</h1>
+                    <div id="gola"></div>
+                    <h1>FRONTEND</h1>
+                    <div id="gola"></div>
+                    <h1>REACT</h1>
+                    <div id="gola"></div>
+                </div> 
+            </div> 
+
+       
+
             <div id="page2-bottom">
-                <h1>We are a group of design- driven, goal-focused creators,  producers, and designers who
-                    believe that the details  make all the difference.</h1>
-                <div id="bottom-part2">
-                    <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
+                <h3><span id="about">ABOUT ME</span> <br>
+                    On my Last year of E&TC Bachelor and
+                    learning new technologies.
+                    I'm a <span id="text-purple">Spring Boot</span> backend developer with a knack for <span id="text-purple">React</span>. 
+                    Passionate about crafting efficient and scalable solutions.  <br><span id="text-purple">Doing what I absolutely love</span>.
+                </h3>
+                
+                <!-- <div id="bottom-part2">
+                    <img src="assets/WhatsApp Image 2024-05-12 at 23.22.22.png"
                         alt="">
                     <p>We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas
                         into reality. We’re here to partner with you through every step of the process and know that
                         relationships are the most important things we build.</p>
-                </div>
+                </div> -->
             </div>
             <div id="gooey">
 
             </div>
         </div>
+        
         <div id="page3">
             <div id="elem-container">
-                <div id="elem1" class="elem"
+                <!-- <div id="elem1" class="elem"
                     data-image="https://images.unsplash.com/photo-1701001308648-7b731a52b8d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
                     <h2>Makers Studio HOI</h2>
@@ -130,10 +315,53 @@
                     data-image="https://images.unsplash.com/photo-1700769025506-6c3dcb9ec9b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D">
                     <div class="overlay"></div>
                     <h2>Play New Kidvision</h2>
-                </div>
+                </div> -->
             </div>
         </div>
-        <div id="page4">
+
+       
+
+        <div id="stack-info">
+            <h3 id="stack-line">STACK THAT I WORK WITH</h3>
+            <div id="stack-with-font">
+                <div id="icon-container">
+                  
+                    <div id="icon-container-line1">
+                        <div class="icon-item">
+                            <img class="stack-img" src="./assets/icons8-java-144 (1).png" alt="">
+                            <span>JAVA</span>
+                        </div>
+                        <div class="icon-item">
+                            <img class="stack-img" src="./assets/icons8-spring-boot-144.png" alt="">
+                            <span>SPRING BOOT</span>
+                        </div>
+                        <div class="icon-item">
+                            <img class="stack-img" src="./assets/icons8-mysql-144.png" alt="">
+                            <span>MYSQL</span>
+                        </div>
+                    </div>
+                    <div id="icon-container-line2">
+                        <div class="icon-item">
+                            <img class="stack-img" src="./assets/icons8-javascript-144.png" alt="">
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="icon-item">
+                            <img class="stack-img" src="./assets/icons8-tailwind-css-144.png" alt="">
+                            <span>TAILWIND CSS</span>
+                        </div>
+                        <div class="icon-item">
+                            <img class="stack-img" src="./assets/icons8-react-native-144.png" alt="">
+                            <span>REACT</span>
+                        </div>
+                    </div>
+                </div>
+                <h1>READY TO CRAFT <br> MEANINGFUL <br> DIGITAL <br> EXPERIENCES</h1>
+            </div>
+        </div>
+        
+        
+        
+        <!-- <div id="page4">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">Slide 1</div>
@@ -146,25 +374,80 @@
                 </div>
 
             </div>
-        </div>
-        <div id="page5">
+        </div> -->
 
+        <div>
+        <div id="edu-contact">
+            <div id="education">
+                <h1>Education</h1>
+                <div id="college-info">
+                    <p> <span id="year">2021 - 2025</span> <br> 
+                        Electronics and Telecommunication <br>
+                        Army Institute of Technology, Pune</p>
+                </div>
+             </div>
+
+            <div id="contact">
+                <h1>Contact</h1>
+                <div id="contact-btn">
+                    <div id="contact-line1">
+                       <h3><a href="">Github</a></h3>
+                       <h3><a href="">LinkedIn</a></h3>
+                       <h3><a href="">Twitter</a></h3>
+                    </div>
+                    <div id="contact-line2">
+                        <h3><a href="">@Mail</a></h3>
+                        <h3><a href="">Medium</a></h3>
+                        <h3><a href="">Linktree</a></h3>
+                    </div>
+                </div>
+                 </div>
+         </div>
+         
+     </div> 
+
+        
+
+
+        <div id="page5">
+            
         </div>
-        <div id="full-scr">
+
+        <!-- <div id="full-scr">
             <div id="full-div1">
                 
             </div>
+        </div> -->
+
+        <div>
+            <div class="message-btn">
+                <button class="dm-btn">Write a Message</button>
+                <button class="dm-btn">Discuss Project</button>
+            </div>
+           
         </div>
+        
+    
+
     </div>
     <div id="footer">
-        <div id="footer-div">
+        <div>
+            <div id="footer-div">
 
+            </div>
+            <h1>LET'S TALK ABOUT THE NEXT BIG THING</h1>
+            <div id="footer-bottom">
+    
+            </div>
         </div>
-        <h1>Sundown</h1>
-        <div id="footer-bottom">
-
+        <div id="copyright">
+            <h3>Copyright © 2024 Jitesh Raghav. All Rights Reserved.</h3>
         </div>
     </div>
+
+   
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

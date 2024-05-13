@@ -60,3 +60,64 @@ swiperAnimation()
 page4Animation()
 menuAnimation()
 loaderAnimation()
+
+
+
+
+function showProjectDetails(title, description, githubLink) {
+    // Create modal container
+    var modalContainer = document.createElement('div');
+    modalContainer.classList.add('modal-container');
+  
+    // Create modal content
+    var modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
+  
+    // Create enlarged image
+    var enlargedImage = document.createElement('img');
+    enlargedImage.src = "./assets/Screenshot 2024-05-07 011406.png";
+    enlargedImage.alt = title;
+    enlargedImage.classList.add('enlarged-project-img');
+    modalContent.appendChild(enlargedImage);
+  
+    // Create project details
+    var projectTitle = document.createElement('h2');
+    projectTitle.textContent = title;
+    projectTitle.classList.add('experience-sub-title');
+    projectTitle.classList.add('project-title');
+    modalContent.appendChild(projectTitle);
+  
+    var projectDescription = document.createElement('h3');
+    projectDescription.textContent = description;
+    projectDescription.classList.add('sub-projecttitle');
+    modalContent.appendChild(projectDescription);
+  
+    // Create buttons
+    var buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('btn-container');
+  
+    var githubButton = document.createElement('button');
+    githubButton.textContent = 'Github';
+    githubButton.classList.add('btn');
+    githubButton.classList.add('btn-color-2');
+    githubButton.classList.add('project-btn');
+    githubButton.onclick = function() { window.open(githubLink, '_blank'); };
+    buttonContainer.appendChild(githubButton);
+  
+    var closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+    closeButton.classList.add('btn');
+    closeButton.classList.add('btn-color-2');
+    closeButton.classList.add('project-btn');
+    closeButton.onclick = function() { modalContainer.remove(); };
+    buttonContainer.appendChild(closeButton);
+  
+    modalContent.appendChild(buttonContainer);
+  
+    // Append modal content to container
+    modalContainer.appendChild(modalContent);
+  
+    // Append modal container to body
+    document.body.appendChild(modalContainer);
+  }
+  
