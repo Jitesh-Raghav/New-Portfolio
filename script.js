@@ -5,7 +5,7 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true,
     smoothMobile: true,
-    inertia: 0.75
+    inertia: 0.90
 });
 
 // Ensure smooth scrolling for anchor links
