@@ -161,12 +161,26 @@ nav h3 {
     color: transparent; */
 }
 
-#jitesh{
-    background: linear-gradient(to right, rgb(0, 98, 255), rgb(107, 2, 255), rgb(153, 0, 255));
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Apply the gradient to text with animation */
+#jitesh {
+    background: linear-gradient(to right, rgb(0, 174, 255), rgb(107, 2, 255), rgb(0, 183, 255));
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: relative;
-    display: inline-block;
+    animation: gradientAnimation 3s linear infinite;
+    display: inline-block; /* Ensure the span behaves like an inline element */
 }
 /* #jitesh::after {
     content: "Jitesh";
