@@ -175,11 +175,11 @@ nav h3 {
 
 /* Apply the gradient to text with animation */
 #jitesh {
-    background: linear-gradient(to right, rgb(0, 174, 255), rgb(107, 2, 255), rgb(0, 183, 255));
+    background: linear-gradient(to right, rgb(0, 174, 255), rgb(166, 2, 255), rgb(0, 183, 255));
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 3s linear infinite;
+    animation: gradientAnimation 10s linear infinite;
     display: inline-block; /* Ensure the span behaves like an inline element */
 }
 /* #jitesh::after {
