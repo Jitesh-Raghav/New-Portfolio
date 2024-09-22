@@ -599,6 +599,25 @@ nav h3 {
     font-weight: 350;
 }
 
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    #about {
+        font-size: 5vw; /* Increase the font size on small screens */
+    }
+
+    #page2-bottom h3{
+        font-size: 24px; /* Increase the font size of h3 */
+         
+    }
+
+    #stack-info h3{
+        font-size: 5vw;
+        font-weight: 350;
+        padding: 0 7vw;
+    }
+}
+
 #bottom-part2 {
     width: 20%;
     /* background-color: aqua; */
