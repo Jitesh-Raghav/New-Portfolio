@@ -353,9 +353,10 @@ nav h3 {
 
   .details-container-color-container p{
       color: #313131bb;
-      text-decoration: underline;
-      text-decoration-style: dotted;
+      text-decoration: none;
+      text-decoration-style: none;
       text-underline-offset: 4px;
+      margin-left: 10px;
   }
   
 
